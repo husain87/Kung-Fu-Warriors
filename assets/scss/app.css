@@ -51,6 +51,7 @@ body {
   text-align: center;
   display: flex;
   flex-wrap: wrap;
+  text-decoration: none;
   justify-content: center; }
 
 .topHeader {
@@ -188,7 +189,8 @@ body {
         text-align: center;
         display: flex;
         flex-wrap: wrap;
-        justify-content: center; }
+        justify-content: center;
+        text-decoration: none; }
 
 .aboutContainerWrap {
   display: flex;
@@ -414,7 +416,8 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     margin-left: 16px;
-    padding: 7px 25px; }
+    padding: 7px 25px;
+    text-decoration: none; }
 
 .roadMapCarouselContainer {
   display: flex;
