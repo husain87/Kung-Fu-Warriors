@@ -35,6 +35,24 @@ body {
   width: 100%;
   height: 100%; }
 
+.generalGreenBtn {
+  background: linear-gradient(180deg, #9DEFED 0%, #99EDA1 89.06%, #56B851 100%);
+  border-radius: 20px;
+  font-family: var(--Blinker);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 21px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: var(--black);
+  padding: 7px 25px;
+  border: 0;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; }
+
 .topHeader {
   background: url(../img/top-bar.png);
   background-repeat: repeat-x;
@@ -744,13 +762,92 @@ body {
   padding: 8px 0px;
   width: 100%;
   width: 220px;
-  justify-content: center; }
+  justify-content: center;
+  position: relative; }
+  .attributeContainer .nav-pills .nav-link:hover:before {
+    background: url(../img/atr-outline.png);
+    width: 100%;
+    height: 100%;
+    content: '';
+    position: absolute; }
   .attributeContainer .nav-pills .nav-link.active {
     background: #0C5F08;
     color: #fff; }
+    .attributeContainer .nav-pills .nav-link.active:before {
+      background: url(../img/atr-outline.png);
+      width: 100%;
+      height: 100%;
+      content: '';
+      position: absolute; }
 .attributeContainer .tab-content {
   padding: 0 0 0 35px; }
   .attributeContainer .tab-content .tab-pane .atrImgWrap {
     width: 100%; }
+
+.houseRankingsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%; }
+  .houseRankingsContainer .houseRankingFilter {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%; }
+    .houseRankingsContainer .houseRankingFilter .houseRankingTextField {
+      background: rgba(231, 255, 233, 0.67);
+      border: 1px solid #0C5F08;
+      box-sizing: border-box;
+      border-radius: 20px;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 17px;
+      line-height: 22px;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      padding: 6px 0;
+      margin: 0 16px 0 0;
+      color: rgba(12, 95, 8, 0.5);
+      min-width: 460px; }
+      .houseRankingsContainer .houseRankingFilter .houseRankingTextField::-webkit-input-placeholder {
+        /* Chrome/Opera/Safari */
+        color: rgba(12, 95, 8, 0.5); }
+      .houseRankingsContainer .houseRankingFilter .houseRankingTextField::-moz-placeholder {
+        /* Firefox 19+ */
+        color: rgba(12, 95, 8, 0.5); }
+      .houseRankingsContainer .houseRankingFilter .houseRankingTextField:-ms-input-placeholder {
+        /* IE 10+ */
+        color: rgba(12, 95, 8, 0.5); }
+      .houseRankingsContainer .houseRankingFilter .houseRankingTextField:-moz-placeholder {
+        /* Firefox 18- */
+        color: rgba(12, 95, 8, 0.5); }
+    .houseRankingsContainer .houseRankingFilter .generalGreenBtn {
+      margin-right: 15px; }
+  .houseRankingsContainer .houseRankingsBoxesWrap {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 35px auto;
+    text-align: center;
+    align-items: center;
+    justify-content: center; }
+    .houseRankingsContainer .houseRankingsBoxesWrap .row {
+      width: 100%; }
+      .houseRankingsContainer .houseRankingsBoxesWrap .row .insideHouseRankingBox {
+        margin-bottom: 15px; }
+        .houseRankingsContainer .houseRankingsBoxesWrap .row .insideHouseRankingBox img {
+          width: 100%; }
+        .houseRankingsContainer .houseRankingsBoxesWrap .row .insideHouseRankingBox p {
+          margin: 0;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 23px;
+          color: #000000; }
+        .houseRankingsContainer .houseRankingsBoxesWrap .row .insideHouseRankingBox span {
+          font-style: normal;
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 23px;
+          color: #000000; }
 
 /*# sourceMappingURL=app.css.map */
